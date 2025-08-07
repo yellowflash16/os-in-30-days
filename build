@@ -5,5 +5,5 @@ extensions="-markdown_in_html_blocks-smart+tex_math_dollars+implicit_figures+lin
 cat book/*.md > html/book.md
 pandoc html/book.md -fmarkdown$extensions -o html/book.html --ascii
 cat html/template.html html/book.html > html/index.html
-Remove-Item html/book.html
-Remove-Item html/book.md
+del /f /q html/book.html
+del /f /q html/book.md
