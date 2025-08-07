@@ -5,6 +5,7 @@ set extensions="-smart+tex_math_dollars+implicit_figures+link_attributes+tex_mat
 
 pandoc html\book.md -fmarkdown%extensions% -o html/book.html --ascii
 copy web\template.html web\book.html > web\index.html
-Remove-Item html\book.html
-Remove-Item html\book.md
+del /f /q html\book.html
+del /f /q html\book.md
+
 
